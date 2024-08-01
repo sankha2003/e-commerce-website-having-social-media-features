@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>search</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <button class="bajari" data-text="Awesome">
+            <span class="actual-text">&nbsp;BAZZARI&nbsp;</span>
+            <span aria-hidden="true" class="hover-text">&nbsp;BAZZARI&nbsp;</span>
+        </button>
+          <!-- <a href="#" class="logo">JSAS</a> -->
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+
+        <div class="grid"></div>
+        <div id="poda">
+        <div class="glow"></div>
+        <div class="darkBorderBg"></div>
+        <div class="darkBorderBg"></div>
+        <div class="darkBorderBg"></div>
+
+        <div class="white"></div>
+
+        <div class="border"></div>
+
+        <div id="main">
+            <input placeholder="Search..." type="text" name="text" class="input" />
+            <div id="input-mask"></div>
+            <div id="pink-mask"></div>
+            <div class="filterBorder"></div>
+            <div id="filter-icon">
+            <svg
+                preserveAspectRatio="none"
+                height="27"
+                width="27"
+                viewBox="4.8 4.56 14.832 15.408"
+                fill="none"
+            >
+                <path
+                d="M8.16 6.65002H15.83C16.47 6.65002 16.99 7.17002 16.99 7.81002V9.09002C16.99 9.56002 16.7 10.14 16.41 10.43L13.91 12.64C13.56 12.93 13.33 13.51 13.33 13.98V16.48C13.33 16.83 13.1 17.29 12.81 17.47L12 17.98C11.24 18.45 10.2 17.92 10.2 16.99V13.91C10.2 13.5 9.97 12.98 9.73 12.69L7.52 10.36C7.23 10.08 7 9.55002 7 9.20002V7.87002C7 7.17002 7.52 6.65002 8.16 6.65002Z"
+                stroke="#d6d6e6"
+                stroke-width="1"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                ></path>
+            </svg>
+            </div>
+            <div id="search-icon">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                height="24"
+                fill="none"
+                class="feather feather-search"
+            >
+                <circle stroke="url(#search)" r="8" cy="11" cx="11"></circle>
+                <line
+                stroke="url(#searchl)"
+                y2="16.65"
+                y1="22"
+                x2="16.65"
+                x1="22"
+                ></line>
+                <defs>
+                <linearGradient gradientTransform="rotate(50)" id="search">
+                    <stop stop-color="#f8e7f8" offset="0%"></stop>
+                    <stop stop-color="#b6a9b7" offset="50%"></stop>
+                </linearGradient>
+                <linearGradient id="searchl">
+                    <stop stop-color="#b6a9b7" offset="0%"></stop>
+                    <stop stop-color="#837484" offset="50%"></stop>
+                </linearGradient>
+                </defs>
+            </svg>
+            </div>
+        </div>
+        </div>
+
+    </nav>
+
+    <header class="section__container header__container" id="home">
+      <div class="header__image">
+        <img src="assets/header.jpg" alt="header" />
+      </div>
+      <div class="header__content">
+        <div>
+          <h1>Get products as per your taste.</h1>
+          <p>
+            This is your fyp where you can get products that you like.
+          </p>
+        </div>
+      </div>
+    </header>
+
+
+    <section class="section__container product__container" id="product">
+      <h2 class="section__header">Products</h2>
+      <div class="product__grid">
+        <div class="product__card">
+          <h4>Stackable Chair</h4>
+          <p>$87.00</p>
+          <img src="assets/product-1.png" alt="product" />
+        </div>
+        <div class="product__card">
+          <h4>Lamp Tool</h4>
+          <p>$35.00</p>
+          <img src="assets/product-2.png" alt="product" />
+        </div>
+        <div class="product__card">
+          <h4>Dining Chair</h4>
+          <p>$55.00</p>
+          <img src="assets/product-3.png" alt="product" />
+        </div>
+        <div class="product__card">
+          <h4>Hand Base Lamp</h4>
+          <p>$35.00</p>
+          <img src="assets/product-4.png" alt="product" />
+        </div>
+        <div class="product__card">
+          <h4>Stylish Chair</h4>
+          <p>$45.00</p>
+          <img src="assets/product-5.png" alt="product" />
+        </div>
+        <div class="product__card">
+          <h4>Vintage Chair</h4>
+          <p>$65.00</p>
+          <img src="assets/product-6.png" alt="product" />
+        </div>
+      </div>
+    </section>
+
+
+    <!-- <footer class="footer" id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo">furni.shop</a>
+          </div>
+          <p>
+            Join us in transforming your living spaces with furniture that
+            blends elegance and practicality seamlessly.
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-linkedin-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-pinterest-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <ul class="footer__links">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Payrol</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Resources</h4>
+          <ul class="footer__links">
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Support</h4>
+          <ul class="footer__links">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Affiliates</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Cancelation Policy</a></li>
+            <li><a href="#">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Web Design Mastery. All rights reserved.
+      </div>
+    </footer> -->
+    <footer>
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+          </div>
+        <ul class="links_to">
+          <li><a class="search" href="#"><ion-icon name="search-sharp"></ion-icon></a></li>
+          <li><a class = "trend"href="#"><ion-icon name="compass-sharp"></ion-icon></a></li>
+          <li><a class = "pencil"href="#"><ion-icon name="pencil-sharp"></ion-icon></a></li>
+          <li><a class = "three"href="#"><ion-icon name="reorder-three-sharp"></ion-icon></ion-icon></a></li>
+        </ul>
+       </footer>
+       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main2.js"></script>
+  </body>
+</html>

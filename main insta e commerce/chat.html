@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="chat.css">
+  <title>Chat Interface</title>
+</head>
+<body>
+  <div class="chat-app">
+    <div class="contact-list" id="contact-list">
+      <h2>Contacts</h2>
+      <ul>
+        <li class="contact" data-contact="MARK">MARK</li>
+        <li class="contact" data-contact="ELON">ELON</li>
+        <li class="contact" data-contact="BILL">BILL</li>
+        <li class="contact" data-contact="JEFF">JEFF</li>
+      </ul>
+    </div>
+    <div class="chat-container">
+      <div class="chat-header" id="chat-header">
+        <h2 id="chat-title">Select a contact</h2>
+      </div>
+      <div class="chat-messages" id="chat-messages">
+        <!-- Messages will be dynamically added here -->
+      </div>
+      <div class="chat-input">
+        <input type="text" id="message-input" placeholder="Type a message" disabled>
+        <button id="send-btn" disabled>Send</button>
+      </div>
+    </div>
+  </div>
+  <script src="chat.js"></script>
+</body>
+</html>
